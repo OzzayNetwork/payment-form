@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>PayMe Payment integration form</title>
+
+    <!-- custom radio and checkbox -->
+    <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" rel="stylesheet" media="all">
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="https://cdn.materialdesignicons.com/5.4.55/" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Payments Integration Service Order Form</h2>
+                    <p>Please fill in the form below with the required information to enable fast delivery of service.</p>
+                    <p class="text-danger"><span>*</span> Required</p>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="form-row m-b-55">
+                            <div class="name">Name of institution</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-12">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="first_name">
+                                            <label class="label--desc">first name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="last_name">
+                                            <label class="label--desc">last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Organisation Name <span class="text-danger">*</span></div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" placeholder="enter the Organisation's name" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Contact Email <span class="text-danger">*</span></div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" placeholder="Enter the email address" name="email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Organisation Physical Address <span class="text-danger">*</span></div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" placeholder="Enter the address" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">KRA PIN Number <span class="text-danger">*</span></div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" placeholder="Enter your KRA pin" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Do you have an MPESA paybill number or till number that you receive payments from? If yes indicate paybill or till number. </label>
+                            <div class="p-t-15 mb-1">
+                                <label class="radio-container m-r-55"><strong>Yes</strong>, I have an Mpesa till number
+                                    <input type="radio" value="yes"  name="mpesa-num">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container"><strong>No</strong>,I dont have
+                                    <input type="radio" value="no" name="mpesa-num">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <div class="w-100 d-none mpesa-number">
+                                <div class="input-group">
+                                    <input class="input--style-5 w-100" placeholder="Enter till or business number" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row p-t-20">
+                            <label class="label label--block mb-1">Do you collect fees and charges from your clients through other methods? Kindly select all that apply</label>
+
+                            <div class="d-flex flex-column other-payments">
+                                <!-- receive payment via cards -->
+                                <div class="pretty p-svg p-curve">
+                                    <input type="checkbox" />
+                                    <div class="state p-success">
+                                        <!-- svg path -->
+                                        <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                        <label>Visa/MasterCard </label>
+                                    </div>
+                                </div>
+
+                                <!-- receive payments viz=a cheques -->
+                                <div class="pretty p-svg p-curve">
+                                    <input type="checkbox" />
+                                    <div class="state p-success">
+                                        <!-- svg path -->
+                                        <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                        <label>Cheques</label>
+                                    </div>
+                                </div>
+
+                                <!-- receive payments via cash -->
+                                <div class="pretty p-svg p-curve">
+                                    <input type="checkbox" />
+                                    <div class="state p-success">
+                                        <!-- svg path -->
+                                        <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                        <label>Cash</label>
+                                    </div>
+                                </div>
+
+                                <!-- receive payments through other methods -->
+                                <div class="pretty p-svg p-curve">
+                                    <input type="checkbox" class="other-payment-method-checker" />
+                                    <div class="state p-success">
+                                        <!-- svg path -->
+                                        <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                        <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                                    </svg>
+                                        <label>Other:</label>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 d-none other-payment-method animated fadeIn w-100">
+                                    <div class="input-group">
+                                        <input class="input--style-5 w-100" placeholder="Enter other payment method" type="text" name="company">
+                                        <small>Enter the other method above</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                            <label class="label--desc">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Subject</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Subject 1</option>
+                                            <option>Subject 2</option>
+                                            <option>Subject 3</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Are you an existing customer?</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Yes
+                                    <input type="radio" checked="checked" name="exist">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="exist">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
