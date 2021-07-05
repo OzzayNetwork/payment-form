@@ -77,6 +77,30 @@
 
     });
 
+    $('body').on('change', 'input[name="disburse-payment"]', function() {
+        var theVal = $(this).val();
+        if (theVal == "yes") {
+            $('.disburse-payment-div').removeClass('d-none')
+        }
+        if (theVal == "no") {
+            $('.disburse-payment-div').addClass('d-none')
+        }
+
+    });
+
+    $('body').on('change', 'input[name="sms-option"]', function() {
+        var theVal = $(this).val();
+        if (theVal == "yes") {
+            $('.sms-option').removeClass('d-none');
+            $('.sms-option-enable').addClass('d-none');
+        }
+        if (theVal == "no") {
+            $('.sms-option').addClass('d-none')
+            $('.sms-option-enable').removeClass('d-none');
+        }
+
+    });
+
     $('body').on('change', '.other-payment-method-checker', function() {
         var checkStatus = $(this).is(":checked");
         if (checkStatus == true) {

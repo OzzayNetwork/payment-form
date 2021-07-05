@@ -341,7 +341,7 @@ h6 {
     background: -webkit-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
     background: -moz-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
     background: -o-linear-gradient(bottom left, #08aeea 0%, #b721ff 100%);
-    background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+    background: linear-gradient(to top right, #ff3301 0%, #ec5b0e 100%);
 }
 
 
@@ -482,11 +482,37 @@ h6 {
 }
 
 .btn--red {
-    background: #ff4b5a;
+    background: #428bca;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.the-logo-cont img {
+    margin-top: 2rem;
+    opacity: 0.2;
+    height: 53px;
+}
+
+.the-logo-cont {
+    justify-content: center;
+}
+
+.opacity-07 {
+    opacity: 0.7;
+}
+
+.mt-1 {
+    margin-top: 1px !important;
 }
 
 .btn--red:hover {
-    background: #eb3746;
+    background: rgb(44 110 213);
 }
 
 
@@ -827,6 +853,13 @@ input {
 
 .other-payments>div {
     margin-bottom: 15px;
+}
+
+.enable-sms--option {
+    padding: 1.5rem;
+    background: #212529;
+    border-radius: 3px;
+    display: flex;
 }
 
 .flex-column {
