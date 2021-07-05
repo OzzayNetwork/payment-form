@@ -115,3 +115,10 @@
 
 
 })(jQuery);
+
+new Vue({
+    template: '<div>{{ hi }}</div>',
+    dfgdfg
+
+
+})

@@ -857,9 +857,10 @@ input {
 
 .enable-sms--option {
     padding: 1.5rem;
-    background: #212529;
+    background: #21252926;
     border-radius: 3px;
     display: flex;
+    border: 1px solid #21252926;
 }
 
 .flex-column {
