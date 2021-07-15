@@ -888,6 +888,85 @@ input {
     padding-bottom: 73px;
 }
 
+.the-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-flow: column;
+    padding: 1.25rem;
+}
+
+.confirm .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-body-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #ff3301 0%, #ec5b0e 100%);
+}
+
+.font-55 {
+    font-size: 55px !important;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.confirm h3 {
+    line-height: 1.4;
+    font-size: 28px;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+p {
+    position: relative;
+    line-height: 1.6em;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.script {
+    font-family: 'Pacifico', cursive;
+}
+
+.font-12px {
+    font-size: 12px !important;
+}
+
+.the-header span {
+    font-size: 78px;
+    margin-bottom: 20px;
+}
+
+.the-header span {
+    font-size: 78px;
+    margin-bottom: 20px;
+}
+
+.text-info {
+    color: #17a2b8!important;
+}
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
 @media (max-width: 767px) {
     .card-5 .card-body {
         padding: 40px 30px;
